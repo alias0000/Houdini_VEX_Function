@@ -1,0 +1,13 @@
+//demonstration
+Evaluates a ramp parameter and return its value.
+ramp parameter를 계산하고 그것의 값을 반환한다.
+
+//form
+float chramp(string channel, float ramppos)
+float chramp(string channel, float ramppos, float time)
+vector chramp(string channel, float ramppos)
+vector chramp(string channel, float ramppos, float time)
+
+//example
+float rand_num = rand(@ptnum);
+chramp("my_ramp", rand_num);
