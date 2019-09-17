@@ -1,0 +1,8 @@
+//demonstration
+
+//form
+float distance(vector2 a. vector2 b)
+float distance(vector a, vector b)
+float distance(vector4 a, vector4 b)
+
+//example
