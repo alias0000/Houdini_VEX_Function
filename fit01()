@@ -1,0 +1,11 @@
+//demonstration
+Takes the value in the range(0, 1) and shifts it to the corresponding value in a new range.
+받는 값은 0 ~ 1내에서의 value가 새로운 범위 new min ~ new max내에서 가지는 값이다.
+
+//form
+float fit01(float value, float new min, float new max)
+<vector> fit01(vector value, vector nmin, vector nmax)
+
+//example
+fit01(0.3, 10, 20) == 13
+0 ~ 1내에서 0.3의 값이 새로운 범위 10 ~ 20내에서는 13이라는 값을 가지기 때문에 13을 반환한다.
