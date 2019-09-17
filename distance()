@@ -1,8 +1,8 @@
 //demonstration
+Returns the distance between two points.
+반환하는 것은 두 점들 사이의 거리이다.
 
 //form
 float distance(vector2 a. vector2 b)
 float distance(vector a, vector b)
 float distance(vector4 a, vector4 b)
-
-//example
