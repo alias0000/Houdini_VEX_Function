@@ -11,5 +11,5 @@ vector chramp(string channel, float ramppos, float time)
 //example
 //각각의 point number마다 랜덤한 수를 할당한다.
 float rand_num = rand(@ptnum);
-//my_ramp의 파라미터를 계산하고 rand_num에 해당하는 ramp position을 읽어 그 값을 반환한다.
-chramp("my_ramp", rand_num);
+//my_ramp의 파라미터를 계산하고 rand_num에 해당하는 ramp position을 읽어 그 값을 반환한다. 그리고 반환된 그 값을 컬러 값에 할당한다.
+@Cd = chramp("my_ramp", rand_num);
