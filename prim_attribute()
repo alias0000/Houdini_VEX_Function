@@ -1,0 +1,23 @@
+//demonstration
+Interpolates the value of an attribute at a certain parametric (u, v) position and copies it into a variable.
+
+//form
+int prim_attribute(string geometry, <type> &value, string attribute_name, int prim_number, float u, v)
+int prim_attribute(string geometry, <type> &value[], string attribute_name, int prim_number, float u, v)
+int prim_attribute(string geometry, <type> &value, string attribtue_name, int prim_number, vector uvw)
+int prim_attribute(string geometry, <type> &value[], string attribute_name, int prim_number, vector uvw)
+
+geometry: A string specifying a geometry file (for example, a.bgeo) to read from. When running inside Houdini, this can be an op:/path/to/sop reference
+
+value: The function overwrites this variable with the interpolated value from the primitive.
+
+attribute_name: The name of the attribute to read. For point and vertex attributes, the value will at the given UV coordinates will be interpolated from the surrounding points/vertices.
+
+prim_number: The primitve number to read the attribute from.
+
+u, v: The primitive UV coordinates at which to read the attribute.
+
+//example
+v@pos;
+prim_attribute(@OpInput1, @pos, "P", @primnum, ch("u"), 0.0);
+addpoint(0, @pos);
