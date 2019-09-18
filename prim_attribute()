@@ -17,7 +17,17 @@ prim_number: The primitve number to read the attribute from.
 
 u, v: The primitive UV coordinates at which to read the attribute.
 
-//example
+//example 1
 v@pos;
 prim_attribute(@OpInput1, @pos, "P", @primnum, ch("u"), 0.0);
 addpoint(0, @pos);
+
+//example 2
+v@pos;
+
+for (int index = 0; index < ch("num"); ++i)
+{
+	f@u = fit01(rand(@primnum + index), ch("min), ch("max"));
+	prim_attribute(@OpInput, @pos, "P", @primnum, @u, 0.0);
+	addpoint(0, pos);
+}
