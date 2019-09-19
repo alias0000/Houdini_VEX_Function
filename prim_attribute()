@@ -1,5 +1,6 @@
 //demonstration
 Interpolates the value of an attribute at a certain parametric (u, v) position and copies it into a variable.
+삽입하는 그 값은 한 어트리뷰트의 값(어떤 매개변수의 (u, v) 위치)이고 복사하는 곳은 변수안이다.
 
 //form
 int prim_attribute(string geometry, <type> &value, string attribute_name, int prim_number, float u, v)
